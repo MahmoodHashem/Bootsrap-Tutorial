@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <title>Dropdowns</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Dropdowns</h2>
+        <p>The <code>.dropdown</code> class is used to indicate a dropdown menu.</p>
+        <p>Use the <code>.dropdown-menu</code> class to actually build the dropdown menu.</p>
+        <p>To open the dropdown menu, use a button or a link with a class of <code>.dropdown-toggle</code> and
+            <code>data-toggle="dropdown"</code>.</p>
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                <li><a class="dropdown-item" href="#">Link 3</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container mt-3">
+        <h2>Dropdown divider</h2>
+        <p>The <code>.dropdown-divider </code> class is used to separate links inside the dropdown menu with a thin horizontal line:</p>
+      
+        <div class="dropdown">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Link 1</a></li>
+            <li><a class="dropdown-item" href="#">Link 2</a></li>
+            <li><a class="dropdown-item" href="#">Link 3</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Another link</a></li>
+          </ul>
+        </div>
+      </div>
+      
+
+      <div class="container mt-3">
+        <h2>Dropdown Header</h2>
+        <p>The <code>dropdown-header</code> class is used to add headers inside the dropdown menu:</p>
+      
+        <div class="dropdown">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><h5 class="dropdown-header">Dropdown header 1</h5></li>
+            <li><a class="dropdown-item" href="#">Link 1</a></li>
+            <li><a class="dropdown-item" href="#">Link 2</a></li>
+            <li><a class="dropdown-item" href="#">Link 3</a></li>
+            <li><h5 class="dropdown-header">Dropdown header 2</h5></li>
+            <li><a class="dropdown-item" href="#">Another link</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="container mt-3">
+        <h2>Active and Disables Dropdownn</h2>
+        <p>The <code>.active</code> class adds a blue background color to the active link.</p>
+        <p>The <code>.disabled</code> class disables a dropdown item (grey text color and a no-parking-sign on hover).</p>
+        
+        <div class="dropdown">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Normal</a></li>
+            <li><a class="dropdown-item active" href="#">Active</a></li>
+            <li><a class="dropdown-item disabled" href="#">Disabled</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container mt-3">
+        <h2>Dropdown Postition</h2>
+        <p>You can also create a "dropend" or "dropstart" menu, by adding the .dropend or .dropstart class to the dropdown element. Note that the caret/arrow is added automaticall</p>
+      
+        <div class="dropdown dropend">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+            Dropend
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Normal</a></li>
+            <li><a class="dropdown-item active" href="#">Active</a></li>
+            <li><a class="dropdown-item disabled" href="#">Disabled</a></li>
+          </ul>
+        </div>
+        <div class="dropdown dropstart">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+              DropStart
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Normal</a></li>
+              <li><a class="dropdown-item active" href="#">Active</a></li>
+              <li><a class="dropdown-item disabled" href="#">Disabled</a></li>
+            </ul>
+          </div>
+      </div>
+
+
+      <div class="container mt-3">
+        <h2>Dropdown Menu Right</h2>
+        <p>Add the <code>.dropdown-menu-end</code> class to <code>.dropdown-menu</code> to right-align the dropdown menu.</p>
+                                          
+        <div class="dropdown dropdown-menu-end">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+            Wide dropdown button to demonstrate this example
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Link 1</a></li>
+            <li><a class="dropdown-item" href="#">Link 2</a></li>
+            <li><a class="dropdown-item" href="#">Link 3</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="container mt-3">
+        <h2>Dropdowns</h2>
+        <p>The <code>.dropup</code> class makes the dropdown menu expand upwards instead of downwards:</p>
+        <p>It must be room for the dropup menu to grow. That is why we add some extra lorem ipsum text.</p>
+        <p>Lorem ipsum one more time!</p>
+        
+        <div class="dropup">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+            Dropup button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Link 1</a></li>
+            <li><a class="dropdown-item" href="#">Link 2</a></li>
+            <li><a class="dropdown-item" href="#">Link 3</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="container mt-3">
+        <h2>Dropdowns</h2>
+        <p>The <code>.dropdown-item-text</code> class is used to add plain text to a dropdown, or used on links for default link styling.</p>                                        
+      
+        <div class="dropdown">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Link 1</a></li>
+            <li><a class="dropdown-item" href="#">Link 2</a></li>
+            <li><a class="dropdown-item" href="#">Link 3</a></li>
+            <li><a class="dropdown-item-text" href="#">Text Link</a></li>
+            <li><span class="dropdown-item-text">Just Text</span></li>
+          </ul>
+        </div>
+      </div>
+      
+      
+      <ul class="pagination justify-content-center sticky-bottom">
+        <li class="page-item "><a class="page-link " href="13-spinners.html">Previous</a></li>
+        <li class="page-item"><a class="page-link " href="./15-list-groups.html">14</a></li>
+        <li class="page-item"><a class="page-link " href="./16-cards.html">15</a></li>
+        <li class="page-item"><a class="page-link active" href="./17-dropdown.html">16</a></li>
+        <li class="page-item"><a class="page-link" href="./18-collapse.html">17</a></li>
+        <li class="page-item"><a class="page-link" href="./13-spinners.html">18</a></li>
+        <li class="page-item"><a class="page-link disabled" href="#">Next</a></li>
+    </ul>
+      
+
+
+      
+
+
+<script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
