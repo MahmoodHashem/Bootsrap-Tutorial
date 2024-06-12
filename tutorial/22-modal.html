@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <title>Modal</title>
+</head>
+
+<body>
+    <div class="container mt-3">
+        <h3>Modal Example</h3>
+        <p>Click on the button to open the modal.</p>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+            Open modal
+        </button>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-sm modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Modal body..
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid my-3">
+        <h2>Modal Size</h2>
+        <p>Change the size of the modal by adding the <code>.modal-sm</code> class for small modals (max-width 300px), <code>.modal-lg</code> class for large modals  (max-width 800px), or <code>.modal-xl</code> for extra large modals  (max-width 1140px). Default is 500px max-width.
+            <br>Add the size class to the <code>div</code> element with class <code>.modal-dialog</code></p>
+    </div>
+
+    <ul class="pagination justify-content-center sticky-bottom">
+        <li class="page-item "><a class="page-link " href="19-nav.html">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="./20-nav-bar.html">19</a></li>
+        <li class="page-item"><a class="page-link  " href="./21-carosel.html">20</a></li>
+        <li class="page-item"><a class="page-link active" href="./22-modal.html">21</a></li>
+        <li class="page-item"><a class="page-link " href="./18-collapse.html">22</a></li>
+        <li class="page-item"><a class="page-link " href="./19-nav.html">23</a></li>
+        <li class="page-item"><a class="page-link " href="20-nav-bar.html">Next</a></li>
+    </ul>
+
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
