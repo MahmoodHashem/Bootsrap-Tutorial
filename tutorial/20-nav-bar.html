@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <title>Navbar</title>
+</head>
+
+<body>
+
+    <div class="container-fluid p-3 m-3 border border-4">
+
+
+        <nav class="navbar navbar-expand-md bg-light ">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 3</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="container-fluid mt-3">
+            <h3>Basic Navbar Example</h3>
+            <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+            <p>A standard navigation bar is created with the <code>.navbar</code> class, followed by a responsive
+                collapsing
+                class:
+                <code>.navbar-expand-xxl|xl|lg|md|sm</code> (stacks the navbar vertically on xxlarge, extra large,
+                large,
+                medium or small
+                screens).
+
+                To add links inside the navbar, use either an
+                <code>ul</code> element (or a <code>div</code>) with <code>class="navbar-nav"</code>. Then add
+                <code>li</code> elements with a <code>.nav-item</code> class followed by an
+                <code>a</code> element with a <code>.nav-link</code> class:
+            </p>
+            <p>The navbar-expand-xxl|xl|lg|md|sm class determines when the navbar should stack vertically
+                (on xxlarge, extra large, large, medium or small screens).</p>
+        </div>
+
+    </div>
+    <div class="container-fluid m-3 border border-3 p-3">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Logo</a>
+            </div>
+        </nav>
+
+        <div class="container-fluid mt-3">
+            <h3>Brand / Logo</h3>
+            <p>The <code>.navbar-brand</code> class is used to highlight the brand/logo/project name of your page.</p>
+        </div>
+    </div>
+
+    <div class="container-fluid p-3 m-3 border border-4">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <span class="navbar-text">Navbar text</span>
+            </div>
+        </nav>
+
+        <div class="container-fluid mt-3">
+            <h3>Navbar Text</h3>
+            <p>Use the <code>.navbar-text</code> class to vertical align any elements inside the navbar that are not
+                links (ensures
+                proper padding).</p>
+        </div>
+    </div>
+    <div class="container-fluid p-3 m-3 border border-4">
+
+        <h3>Collapsible Navbar</h3>
+        <p>To create a collapsible navigation bar, use a button with <code>class="navbar-toggler"</code>
+            ,<code>data-bs-toggle="collapse"</code>
+            and <code>data-bs-target="#thetarget"</code>. Then wrap the navbar content (links, etc) inside a
+            <code>div</code> element with <code>class="collapse navbar-collapse"</code>, followed by an id that matches
+            the data-bs-target of the
+            button: "thetarget".
+        </p>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right
+            corner (try to re-size this window).</p>
+        <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+        <p>Tip: You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler
+            button.</p>
+
+    </div>
+
+
+    <div class="container-fluid m-3 p-3 border border-4">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar2">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">Dropdown</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Link</a></li>
+                                <li><a class="dropdown-item" href="#">Another link</a></li>
+                                <li><a class="dropdown-item" href="#">A third link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid mt-3">
+            <h3>Navbar With Dropdown</h3>
+            <p>This example adds a dropdown menu in the navbar.</p>
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid m-3 p-3 border border-4">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Link</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="text" placeholder="Search">
+                        <button class="btn btn-primary" type="button">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid mt-3">
+            <h3>Navbar Forms</h3>
+            <p>You can also include forms inside the navigation bar.</p>
+        </div>
+    </div>
+
+
+    <ul class="pagination justify-content-center sticky-bottom">
+        <li class="page-item "><a class="page-link " href="19-nav.html">Previous</a></li>
+        <li class="page-item"><a class="page-link active " href="./20-nav-bar.html">19</a></li>
+        <li class="page-item"><a class="page-link " href="./16-cards.html">20</a></li>
+        <li class="page-item"><a class="page-link" href="./17-dropdown.html">21</a></li>
+        <li class="page-item"><a class="page-link " href="./18-collapse.html">22</a></li>
+        <li class="page-item"><a class="page-link " href="./19-nav.html">23</a></li>
+        <li class="page-item"><a class="page-link " href="20-nav-bar.html">Next</a></li>
+    </ul>
+
+
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
