@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.css">
+    <title>Toast</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1>Toasts</h1>
+        <p>The toast component is like an alert box that is only shown for a couple of seconds when something happens
+            (i.e. when the user clicks on a button, submits a form, etc.).</p>
+    </div>
+
+    <div class="container mt-3">
+        <h3>Toast Example</h3>
+        <p>To create a toast, use the <code>.toast</code> class, and add a <code>.toast-header</code> and a
+            <code>.toast-body</code> inside of it.
+            <Strong>Note:</Strong> Toasts are hidden by default. Use the <code>.show</code> class if you want to display
+            it. To close it, use a
+            <code> &lt;button&gt; </code> element and add <code>data-bs-dismiss="toast"</code>
+        </p>
+        <!-- <p>In this example, we use the <code>.show</code> class to always show the toast by default. You can close it by clicking on
+            the close (x) icon inside the toast header.</p> -->
+
+
+         <button class="btn btn-primary" id="showToast">Toast</button>   
+        <div class="toast my-3">
+            <div class="toast-header">
+                <strong class="me-auto">Toast Header</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                <p>Some text inside the toast body</p>
+            </div>
+        </div>
+    </div>
+
+    <ul class="pagination justify-content-center sticky-bottom">
+        <li class="page-item "><a class="page-link " href="24-popover.html">Previous</a></li>
+        <li class="page-item"><a class="page-link active " href="./25-toast.html">19</a></li>
+        <li class="page-item"><a class="page-link " href="./21-carosel.html">20</a></li>
+        <li class="page-item"><a class="page-link" href="./22-modal.html">21</a></li>
+        <li class="page-item"><a class="page-link " href="./23-tooltip.html">22</a></li>
+        <li class="page-item"><a class="page-link " href="./24-popover.html">23</a></li>
+        <li class="page-item"><a class="page-link " href="25-toast.html">Next</a></li>
+    </ul>
+
+
+
+<!--===============================  Script  =========================== -->
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const btn = document.querySelector("#showToast"); 
+        const toast = document.querySelector(".toast");
+        
+        
+        btn.addEventListener("click", function(){
+            toast.classList.add('show'); 
+
+            setTimeout(() => {
+                toast.classList.remove('show'); 
+            }, 3000);
+        })
+
+
+    </script>
+</body>
+
+</html>
