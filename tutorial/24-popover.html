@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <title>Popover</title>
+</head>
+
+<body>
+    <div class="container-fluid p-3">
+        <h1>Popover</h1>
+        <p>The Popover component is similar to tooltips; it is a pop-up box that appears when the user clicks on an
+            element. The difference is that the popover can contain much more content.</p>
+    </div>
+    <div class="container mt-3">
+        <h3>Popover Example</h3>
+        <p>To create a popover, add the <code>data-bs-toggle="popover"</code> attribute to an element. <br>
+            Use the <code>title</code> attribute to specify the header text of the popover, and use the
+            <code> data-bs-content attribute</code> to specify the text that should be displayed inside the popover's
+            body
+        </p>
+        <p><strong>Note: </strong>Popovers must be initialized with JavaScript to work.</p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Popover Header"
+            data-bs-content="Some content inside the popover">
+            Toggle popover
+        </button>
+    </div>
+
+
+
+    <div class="container mt-3">
+        <h3>Popover Positioning</h3>
+        <p>Use the <code>data-bs-placement</code> attribute to set the position of the popover on top, bottom, left or
+            the right side of the element:</p>
+        <a  title="Header" data-bs-toggle="popover" data-bs-placement="top" data-content="Content">Top</a>
+        <a  title="Header" data-bs-toggle="popover" data-bs-placement="bottom" data-content="Content">Bottom</a>
+        <a  title="Header" data-bs-toggle="popover" data-bs-placement="left" data-content="Content">Left</a>
+        <a  title="Header" data-bs-toggle="popover" data-bs-placement="right" data-content="Content">Right</a>
+    </div>
+
+    <div class="container mt-3">
+        <h3>Dismissible Popover</h3>
+        <p>By default, the popover is closed when you click on the element again. However, you can use the
+            <code>data-bs-trigger="focus"</code> attribute which will close the popover when clicking outside the
+            element</p>
+        <button class="btn" role="button" title="Dismissible popover" data-bs-toggle="popover" data-bs-trigger="focus"
+            data-bs-content="Click anywhere in the document to close this popover">Click me</butt>
+    </div>
+
+
+    <div class="container mt-3">
+        <h3>Hoverable Popover</h3>
+        <p> <strong>Tip:</strong> If you want the popover to be displayed when you move the mouse pointer over the element, use the <code>data-bs-trigger</code> attribute with a value of "hover":</p>
+        <a href="#" title="Header" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Popover text">Hover
+            over me</a>
+    </div>
+
+    <ul class="pagination justify-content-center sticky-bottom">
+        <li class="page-item "><a class="page-link " href="19-nav.html">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="./20-nav-bar.html">19</a></li>
+        <li class="page-item"><a class="page-link  " href="./21-carosel.html">20</a></li>
+        <li class="page-item"><a class="page-link " href="./22-modal.html">21</a></li>
+        <li class="page-item"><a class="page-link" href="./23-tooltip.html">22</a></li>
+        <li class="page-item"><a class="page-link active " href="./24-popover.html">23</a></li>
+        <li class="page-item"><a class="page-link " href="20-nav-bar.html">Next</a></li>
+    </ul>
+
+
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
+</body>
+
+</html>
